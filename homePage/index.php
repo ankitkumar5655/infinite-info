@@ -16,7 +16,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
 
-    <title>Infinite-Info</title>
+    <title>infinite-info</title>
 </head>
 
 
@@ -24,20 +24,23 @@
     <div class="nav-card">
         <nav class="nav1">
             <button class="user-nav" id="trigger-btn">Login</button>
+
             <div class="search-nav">
                 <span class="search-box">
                     <i class="fa fa-search"></i>
                     <input type="text" class="search-text-box" id="search-text-box"
-                        placeholder="Search What You Exactly Want.... (Enhanced Search By Google)">
+                        placeholder="Search What You Exactly Want....">
                     <button class="go-btn" type="submit">GO</button>
                 </span>
             </div>
+
             <div class="logo-area">
                 <img src="../css-files/logo/logo.png" alt="infinite-info" class="logo">
                 <span class="logo-text-box">
                     <h1>infinite<br>info</h1>
                 </span>
             </div>
+
             <button class="menu-btn1">
                 <i class="fa fa-th-large"></i>
                 <h1>Menu</h1>
@@ -108,7 +111,7 @@
                 </div>
 
                 <div class="btn-div">
-                    <button class="more-btn"><a href="landing-page.html" class="more-links">Here We Go <i
+                    <button class="more-btn"><a href="../landing-pages/landing-page.php" class="more-links">Here We Go <i
                                 class="fas fa-chevron-right"></i></a></button>
                 </div>
             </div>

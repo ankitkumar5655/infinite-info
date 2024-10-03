@@ -6,83 +6,75 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link rel="stylesheet" href="../homePage/index.css">
     <link rel="stylesheet" href="landing-page.css">
-    <link rel="stylesheet" href="../css-files/fontawesome/fontawesome-free-5.15.3-web/css/all.css">
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> -->
+    <link rel="stylesheet" href="../user-page/user.css">
+    <link rel="stylesheet" href="../charm-menu/charm-menu.css">
+    <link rel="stylesheet" href="../css-files/Ico-Moon/Charm-Menu-Icons.css">
+    <link rel="stylesheet" href="../fontawesome/fontawesome-free-5.15.3-web/css/all.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
 
-    <title>Infinite-Info</title>
+    <title>infinite-info</title>
 </head>
 
+<header>
+    <div class="nav-card">
+        <nav class="nav1">
+            <button class="user-nav" id="trigger-btn">Login</button>
+            <div class="search-nav">
+                <span class="search-box">
+                    <i class="fa fa-search"></i>
+                    <input type="text" class="search-text-box" id="search-text-box"
+                        placeholder="Search What You Exactly Want.... (Enhanced Search By Google)">
+                    <button class="go-btn" type="submit">GO</button>
+                </span>
+            </div>
+            <div class="logo-area">
+                <img src="../css-files/logo/logo.png" alt="infinite-info" class="logo">
+                <span class="logo-text-box">
+                    <h1>infinite<br>info</h1>
+                </span>
+            </div>
+            <button class="menu-btn1">
+                <i class="fa fa-th-large"></i>
+                <h1>Menu</h1>
+            </button>
+            <button class="night-mode-btn">
+                <i class="fas fa-adjust"></i>
+            </button>
+
+        </nav>
+
+        <nav class="nav2">
+            <div class="logo-area-2">
+                <img src="../css-files/logo/logo.png" alt="infinite-info" class="logo-2">
+                <span class="logo-text-box-2">
+                    <h1>infinite<br>info</h1>
+                </span>
+            </div>
+            <div class="navlist">
+                <ul class="menu">
+                    <li class="main-menu"><a href="">Home</a></li>
+                    <li class="main-menu"><a href="">Explore</a><i class="fas fa-chevron-down" id="explore-chev"></i>
+                    </li>
+                    <li class="main-menu"><a href="">Services</a><i class="fas fa-chevron-down" id="service-chev"></i>
+                    </li>
+                    <li class="main-menu"><a href="">Blog</a></li>
+                    <li class="main-menu"><a href="">Help</a><i class="fas fa-chevron-down" id="help-chev"></i>
+                    </li>
+                    <li class="main-menu"><a href="">About</a></li>
+                </ul>
+            </div>
+            <button class="menu-btn2"><i class="fa fa-th-large"></i></button>
+            <button class="more-option" id="charm-trigger"><i class="fas fa-ellipsis-h"></i></button>
+        </nav>
+    </div>
+</header>
+
 <body>
-    ` <nav class="navbar">
-
-        <div class="logo">
-
-        </div>
-
-        <div class="navlist">
-
-            <ul class="menu-list">
-                <li class="active main-menu select-li"><a href="#home"
-                        class="nav-anchors main-menu under-anchors">HOME</a></li>
-                <li class="main-menu select-li"><a href="#explore"
-                        class="nav-anchors main-menu under-anchors">EXPLORE<span class="fas fa-chevron-down"></span></a>
-                    <div class="sub-menu  explore-smenus">
-                        <ul>
-                            <li class="smenu-list"><a href="#">Travel</a></li>
-                            <li class="smenu-list"><a href="#">Beauty</a></li>
-                            <li class="smenu-list"><a href="#">Lifestyle</a></li>
-                            <li class="smenu-list"><a href="#">Food</a></li>
-                            <li class="smenu-list"><a href="#">Health</a></li>
-                            <li class="last-smenu-list"><a href="#">Hacks & Tips</a></li>
-                        </ul>
-                    </div>
-                </li>
-
-                <li class="main-menu select-li"><a href="#services"
-                        class="nav-anchors main-menu  under-anchors">SERVICES<span
-                            class="fas fa-chevron-down"></span></a>
-                    <div class="sub-menu  services-smenus">
-                        <ul>
-                            <li class="smenu-list"><a href="#">Public</a></li>
-                            <li class="smenu-list"><a href="#">Transport</a></li>
-                            <li class="smenu-list"><a href="#">Education</a></li>
-                            <li class="smenu-list"><a href="#">Medical</a></li>
-                            <li class="last-smenu-list"><a href="#">Shopping</a></li>
-                        </ul>
-                    </div>
-                </li>
-
-                <li class="main-menu select-li"><a href="#blog" class="nav-anchors main-menu  under-anchors">BLOG</a>
-                </li>
-                <li class="main-menu select-li"><a href="#help" class="nav-anchors main-menu  under-anchors">HELP<span
-                            class="fas fa-chevron-down"></span></a>
-                    <div class="sub-menu  help-smenus">
-                        <ul>
-                            <li class="smenu-list"><a href="#">E-mail us</a></li>
-                            <li class="smenu-list"><a href="#">File complaints</a></li>
-                            <li class="smenu-list"><a href="#">Request a call</a></li>
-                            <li class="last-smenu-list"><a href="#">Browse queries</a></li>
-                        </ul>
-                    </div>
-                </li>
-                <li class="main-menu select-li"><a href="#about" class="nav-anchors main-menu  under-anchors">ABOUT</a>
-                </li>
-            </ul>
-        </div>
-
-        <div class="button-nav">
-            <button class="btn sign-in">Sign-in</button>
-            <button class="btn sign-up">Sign-Up</button>
-        </div>
-        <div class="search-nav">
-
-        </div>
-
-    </nav>
-
-
-
+    `
     <div class="slide-container">
 
         <div class=" slide-box slide-1">
@@ -1250,9 +1242,10 @@
     <span class="arrow next" onclick="controller(1)">&#10095</span>
 
 
-    <script type="text/javascript" src="landing-Page.js"></script>
-
     </div>
+
+    <script type="text/javascript" src="landing-Page.js"></script>
+    <script type="text/javascript" src="../homePage/index.js"></script>
 
 </body>
 

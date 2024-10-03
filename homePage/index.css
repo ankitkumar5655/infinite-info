@@ -85,7 +85,7 @@ header {
   box-sizing: border-box;
   left: 8%;
   padding: 0 1%;
-  border: 1px solid purple;
+  /* border: 1px solid purple; */
   overflow: hidden;
   transition: ease 0.5s;
   z-index: 2;
@@ -201,7 +201,7 @@ header {
   transition: ease-in-out 0.5s;
 }
 
-.vanish-logo-area {
+.vanish {
   display: none;
 }
 
@@ -236,8 +236,9 @@ header {
 .menu-btn1 {
   display: inline-flex;
   position: absolute;
-  width: 80px;
+  width: auto;
   height: 35px;
+  margin-right: 2%;
   text-align: center;
   align-items: center;
   justify-content: space-between;
@@ -246,7 +247,7 @@ header {
   background-color: transparent;
   box-sizing: border-box;
   color: white;
-  border: none;
+  /* border: 2px solid white; */
   outline: none;
   right: 6%;
   cursor: pointer;
@@ -525,7 +526,7 @@ header {
   display: flex;
   align-items: center;
   flex-direction: column;
-  border: 2px solid greenyellow;
+  /* border: 2px solid greenyellow; */
 }
 
 .more-btn {
@@ -1383,6 +1384,13 @@ header {
         visibility: hidden;
       }
 
+      .logo-text-box {
+        width: 70px;
+        height: 30px;
+        line-height: 15px;
+        font-size: 0.6em;
+      }
+
 }
 
 @media only screen and (max-width: 600px) {
@@ -1440,6 +1448,19 @@ header {
   .utility-wrapper {
     margin-top: 40%;
   }
+
+  .logo-text-box {
+    font-size: 0.5em;
+    border: 2px solid white;
+  }
+
+  .menu-btn1{
+    margin-right: 4%;
+  }
+
+  .menu-btn1 h1{
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 450px) {
@@ -1461,7 +1482,7 @@ header {
   }
 
   .search-nav {
-    visibility: hidden;
+    display: none;
   }
 }
 
@@ -1478,6 +1499,14 @@ header {
 
   .utility-text-ul {
     font-size: 0.7em;
+  }
+
+    .night-mode-btn{
+    display: none;
+  }
+
+  .menu-btn1{
+    right: 0;
   }
 }
 

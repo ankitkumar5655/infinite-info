@@ -1,0 +1,336 @@
+*{
+    margin: 0 ;
+    padding: 0;
+    font-family:'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+
+.container{
+    width: 100%;
+    height: 100vh; 
+    display: flex; 
+    flex-wrap: wrap;
+    background-color: linear-gradient(rgba(0,0,0.7),rgba(0,0,0.7));
+    background-image: url(Trav-Images/Travel-Back.jpg);
+    background-position: center;
+    background-size: cover;
+    opacity: 0.9;
+    box-sizing: border-box;
+}
+
+
+
+/* .navbar{
+    height: 12vh;
+    width: 100%;
+    box-sizing: border-box;
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: rgb(0,0,0,0.5);
+} */
+
+.logo{
+    width: 70px;
+}
+
+/* nav{
+    flex: 1;
+    text-align: left;
+}
+
+.navbar ul{
+    position: absolute;
+    transform: (-50%,-50%);
+    margin-top: -25px;
+    margin-right: -20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+
+nav ul li {
+    list-style: none;
+}
+
+
+nav ul li a{
+    position: relative;
+    display: block;
+    text-decoration: none;
+    color:white;
+    padding-top: 5px;
+    padding-right: 6px ;
+    padding-bottom: 5px ;
+    padding-left: 10px ;
+    margin-top: 12px;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 17px;
+    text-align: center;
+    font-weight: bold;
+    border: 2px solid red;
+    transition: transform 0.2s;
+}
+
+
+nav ul li .active a{
+    background-color: white;
+    color: black;
+    border-radius: 3px;
+}
+
+
+
+.sub-menu-1{
+    display: none;
+    
+}
+    
+
+.sub-menu-1  ul{
+    display: flex;
+    background-color:rgb(0,0,0,0.5) ;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+
+.sub-menu-1  ul .sub-menu-links{
+    color: white;
+    padding: 1px;
+} */
+
+
+/* .active{
+background-color: white;
+border-radius: 3px;
+} */
+
+
+
+
+/* nav ul li:hover a {
+ color:black;
+}
+
+
+
+
+nav ul li:hover .sub-menu-1{
+    display: block;
+    position: absolute;
+    margin-top: 6px;
+    margin-left: -34px;
+}
+
+
+nav ul li:hover .sub-menu-1 ul{
+    display: block;
+    box-sizing: border-box;
+    width: 160px;
+    margin: 0px;
+    align-items: center;
+}
+
+
+nav ul li:hover .sub-menu-1 ul li{
+    display: block;
+    box-sizing: border-box;
+    width: 150;
+    padding: 8px;
+    border-bottom: 1px;
+    border-bottom-style: solid;
+    border-bottom-color:  white; 
+    background: tarnsaparent;
+    border-radius: 0px;
+
+}
+
+nav ul li:hover .sub-menu-1 ul li:last-child{
+    border-bottom: none;
+}
+
+
+nav ul li:hover .sub-menu-1 ul li .sub-menu-links:hover{
+    color:black;
+} */
+
+.row{
+ display: flex;
+ flex-wrap: wrap;
+ height: 88%;
+ align-items: center;
+ border: 2px solid pink;
+}
+
+
+.col{
+    border: 2px solid blue;
+    margin-top: 90px;
+    flex-basis: 50%;
+    padding-left: 2%;
+    padding-right: 3%;
+    padding-bottom: 1%;
+}
+
+
+
+h1{
+    color:white;
+    font-size: 90px;
+}
+
+.headings{
+    color:white;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 0 0 5px #999;
+}
+
+p{
+    color: white;
+    font-size: 15px;
+    line-height: 17px;
+}
+
+button{
+    width: 180px;
+    color: #000;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 12px 0;
+    background: white;
+    border: 0;
+    border-radius: 20px;
+    outline: none;
+    margin-top: 13px;
+}
+
+button:hover{
+    background:	rgb(242, 242, 242);
+}
+
+.card-div{
+    width:360px;
+    display: flex;
+    flex-wrap: wrap;
+    border: 2px solid red;
+    margin-top: 30px;
+    margin-right: 15px;
+    margin-left: 140px;
+    padding-left:0px;
+    padding-right:0px;
+    justify-content: center;  
+}
+
+.card{
+width: 150px;
+height: 170px;
+display: inline-block;
+padding-top: 60px;
+padding-right: 15px;
+padding-bottom: 15px;
+padding-left: 15px;
+box-sizing: border-box;
+cursor: pointer;
+margin: 8px 13px;
+background-position: center;
+outline: none;   
+background-size: cover;
+transition: transform 0.5s;
+}
+
+.card2{
+    background-image: url(CSS-Files/Trav-Images/Stays.png);
+    
+}
+
+.same-card:hover{
+    background-image: none;
+    background-color: 	rgb(242, 242, 242);
+    opacity: 0.8;
+    
+}
+
+.unique-card:hover{
+    background-color: transparent;
+}
+
+
+.card1{
+    background-image: url(Trav-Images/Places.png);
+}
+
+
+.card3{
+    background-image: url(Trav-Images/Dine.png);
+}
+
+.card4{
+    background-image: url(Universal-Images/See-more.png);
+    background-position: center;
+    opacity: 0.7;
+    padding-top: 58px;
+    padding-right:50px; 
+    padding-left:50px;
+    padding-bottom:50px; 
+    border: none;
+    background-color: transparent;
+    
+}
+
+
+/* .card4:hover #next-card{
+ display:flex;
+} */
+
+
+
+.card:hover{
+    padding: 15px;
+    transform: translateY(-10px);
+}
+
+.description{
+    display: none;
+    color: black;
+    /* text-shadow: 0 0 15px #000; */
+    font-size: 13px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+
+.card:hover .headings{
+    text-shadow: none;
+    text-align: left;
+    text-decoration-line: underline;
+    text-decoration-color: rgb(56, 149, 211);
+    text-decoration-style: solid;
+    text-underline-offset: 3px;
+    color: rgb(56, 149, 211);
+    font-size: 32px;
+}
+
+.card:hover .description{
+    display: flex;
+    flex-wrap: wrap;
+    text-shadow: none;
+    color: rgb(56, 149, 211);
+    font-size: 15px;
+    font-weight: normal;
+}
+
+
+
+
+
+
+
+

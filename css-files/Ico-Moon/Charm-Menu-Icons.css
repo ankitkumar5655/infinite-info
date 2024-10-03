@@ -1,0 +1,63 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?crefn8');
+  src:  url('fonts/icomoon.eot?crefn8#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?crefn8') format('truetype'),
+    url('fonts/icomoon.woff?crefn8') format('woff'),
+    url('fonts/icomoon.svg?crefn8#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-Language-Icon:before {
+  content: "\e906";
+}
+.icon-Miscellanous:before {
+  content: "\e907";
+}
+.icon-Utility:before {
+  content: "\e908";
+}
+.icon-World-Icon:before {
+  content: "\e909";
+}
+.icon-Chat-Bot:before {
+  content: "\e90a";
+}
+.icon-Feedback-Icon:before {
+  content: "\e90b";
+}
+.icon-Tamil-Font:before {
+  content: "\e900";
+}
+.icon-Japanese-Font:before {
+  content: "\e901";
+}
+.icon-English-Font:before {
+  content: "\e902";
+}
+.icon-Hindi-Font:before {
+  content: "\e903";
+}
+.icon-French-Font:before {
+  content: "\e904";
+}
+.icon-German-Font:before {
+  content: "\e905";
+}

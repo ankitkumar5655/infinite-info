@@ -1,0 +1,643 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+
+.navbar{
+    width:100%;
+    height: 11vh;
+    position: sticky;
+    background-color: rgb(0,0,0,0.3);
+    margin-top: -1.6%;
+    z-index: 1;
+}
+
+
+.logo{
+ width: 11vw;
+ height: 11vh;
+ position: absolute;
+ box-sizing: border-box;
+ /* border: 2px solid red; */
+}
+
+.navlist{
+    display: flex;
+    width: 56vw;
+    height: 11vh;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    box-sizing: border-box;
+    margin-left: 11%;
+    padding-left: 0px;
+    padding-right: 0px;
+    /* border: 2px solid blue; */
+}
+
+.menu-list{
+   padding-left: 0px;
+   padding-right: 0px;
+}
+
+
+.menu-list li{
+    display: inline-flex;
+    list-style: none;
+}
+
+.menu-list li a{
+    text-decoration: none;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    font-family: sans-serif, Arial;
+}
+
+
+.sub-menu{
+    background-color:rgba(54, 56, 58, 1);
+    margin-top: 5%;
+    position: absolute;
+    border-radius: 5px;
+    visibility: hidden;
+    border: 2px solid red;
+    /* opacity: 0.4; */
+    transition: opacity 300ms linear, margin-top 0.5s;
+}
+
+
+.sub-menu li{
+    display: block;
+    padding: 5px 0px;
+}
+
+.sub-menu li a{
+    font-size: 19px;
+    padding-left: 0px;
+    text-align: center;
+}
+
+.smenu-list{
+    border-bottom: 1px solid white;
+}
+
+
+.last-smenu-list{
+    border-bottom: none;
+}
+
+
+.explore-smenus{
+    width: 130px;
+    margin-left: -20px;
+}
+
+
+
+.services-smenus{
+    width: 165px;
+    margin-left: -6px;
+}
+
+
+.help-smenus{
+    width: 178px;
+    margin-left: -19px;
+}
+
+
+
+.fa-chevron-down{
+    margin-top: 4px;
+    font-size: 11px;
+}
+
+
+.button-nav{
+    display: flex;
+    width: 18vw;
+    height: 11vh;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    margin-left: 67%;
+    /* border: 2px solid yellowgreen; */
+}
+
+.btn{
+    width: 80px;
+    height: 38px;
+    margin: 6px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.sign-in{
+    border: 4px;
+    border-style: solid;
+    border-color: white;
+    background-color: white;
+}
+
+
+.sign-up{
+    border: 4px;
+    border-style: solid;
+    border-color: white;
+    background-color: black;
+    color: white;
+
+}
+
+
+.sign-up:hover{
+    animation: shake 0.6s infinite;;
+}
+
+@keyframes shake {
+    0%{
+        transform: translate(0px,0px) rotate(0deg);
+    }
+    25%{
+        transform: translate(1px,1px) rotate(1deg);
+    }
+    50%{
+        transform: translate(-1px,-1px) rotate(-1deg);
+    }
+    75%{
+        transform: translate(2px,-1px) rotate(2deg);
+    }
+    100%{
+        transform: translate(-1px,1px) rotate(-1deg);
+    }
+}
+
+.search-nav{
+    width: 15vw;
+    height: 11vh;
+    position: absolute;
+    box-sizing: border-box;
+    margin-left: 85%;
+    /* border: 2px solid pink; */
+}
+
+
+.slide-container{
+   position: relative;
+   width: 100%;
+   height: 100vh;
+   margin-top:-8%;
+   z-index: 0;
+   
+   
+}
+
+.slide-box{
+    display: flex;
+    width: 100%;
+    height: 100vh;   
+}
+
+.slide-1{
+    background-image: url("CSS-Files/Trav-Images/Travel-Back.jpg"),linear-gradient(rgba(0,0,0,0.5),rgba(0, 0, 0, 0.1));
+    background-size: cover;
+    background-blend-mode:soft-light;
+}
+
+.slide-2{
+    background-image: url("CSS-Files/Beauty-Images/Beauty-Back.jpg"),linear-gradient(rgba(0,0,0,0.5),rgba(0, 0, 0, 0.1));
+    background-size: cover;
+    background-blend-mode:soft-light;
+}
+
+.slide-3{
+    background-image: url("CSS-Files/Lifestyle-Images/Lifestyle-Back.jpg"),linear-gradient(rgba(0,0,0,0.5),rgba(0, 0, 0, 0.1));
+    background-size: cover;
+    background-blend-mode:soft-light;
+}
+
+.slide-4{
+    background-image: url("CSS-Files/Food-Images/Food-Back.jpg"),linear-gradient(rgba(0,0,0,0.5),rgba(0, 0, 0, 0.1));
+    background-size: cover;
+    background-blend-mode:soft-light;
+}
+
+.slide-5{
+    background-image: url("CSS-Files/Health-Images/Health-Back.jpg"),linear-gradient(rgba(0,0,0,0.5),rgba(0, 0, 0, 0.1));
+    background-size: cover;
+    background-blend-mode:soft-light;
+}
+
+.slide-6{
+    background-image: url("CSS-Files/Hacks&Tips-Images/Hacky-Back.jpg"),linear-gradient(rgba(0,0,0,0.5),rgba(0, 0, 0, 0.1));
+    background-size: cover;
+    background-blend-mode:soft-light;
+}
+
+.slide-box{
+    display: none;
+}
+
+
+.cat-box{
+    width: 100%;
+    height: 95vh;
+    /* background-color: yellow; */
+    position: absolute;
+    top: 6%;
+}
+
+
+
+
+.arrow{
+    cursor: pointer;
+    position: absolute;
+    top: 35%;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.712);
+    padding: 8px 18px;
+    border-radius: 50%;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.prev{
+    left: 8px;
+}
+
+.next{
+    right: 8px;
+}
+
+.cat-title-box{
+    width: 50% ;
+    height: 60vh ;
+    position: absolute;
+    margin-top: 10%;
+    padding-top: 20px;
+    padding-left: 4px;
+    /* background-color: red; */
+    display: none;
+    
+}
+
+.cat-headings{
+    color:white;
+    font-size: 80px;
+}
+
+
+.cat-detail{
+    color: white;
+    margin-top: -8%;
+    font-size: 15px;
+    line-height: 16px;
+}
+
+.exp-btn{
+        width: 180px;
+        color: black;
+        font-size: 12px;
+        font-weight: bold;
+        cursor: pointer;
+        padding: 12px 0;
+        background: white;
+        border: 0;
+        border-radius: 20px;
+        outline: none;
+        top: 0;
+    }
+
+.card-div{
+    max-width: 95%;
+    /* max-width: 1011.34px; */
+    /* max-width: 34%; */
+    height: 75vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    /* border: 3px solid greenyellow; */
+    margin-top: 8%;
+    right: 0;
+    margin-left: 3%;
+    padding-right: 1px;
+    padding-bottom: 0.5%;
+    margin-right: 3%;
+    
+}
+
+.card{
+    width: 150px;
+    height: 170px;
+    transform-style: preserve-3d;
+    display: inline-flex;
+    border-radius: 10px;
+    box-sizing: border-box;
+    cursor: pointer;
+    /* margin-top: 2%; */
+    margin-top: 1.5%;
+    /* margin-left: 4%; */
+    margin-left: 2%;
+    /* margin-bottom: 3%; */
+    margin-bottom: 0%;
+    /* border: 2px solid black; */
+    outline: none;   
+    transition: all 0.5s ease;
+    }
+
+
+    .front-card{
+        display: flex;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        backface-visibility: hidden;
+        background-size: cover;
+        background-position: center;
+        color:white;
+        font-size: 30px;
+        font-weight: bold;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        text-shadow: 0 0 5px #999;
+      }
+
+      .back-card{
+       display: flex;
+       position: absolute;
+       width: 100%;
+       height: 100%;
+       border-radius: 10px;
+       backface-visibility: hidden; 
+       background-color: rgb(242, 242, 242);
+       text-align: center;
+       align-items:center;
+       justify-content: center;
+       opacity: 0.8;
+       transform:rotateY(180deg);
+      }
+
+
+      .back-head{
+        text-shadow: none;
+        text-decoration-line: underline;
+        font-weight: bold;
+        text-underline-offset: 3px;
+        font-size: 25px;    
+     }
+
+
+     .watery-head{
+         font-size: 20px;
+     }
+
+
+    .back-descri{
+        text-shadow: none;
+        font-size: 15px;
+        font-weight: normal;
+        line-height: 13px;
+    }
+
+
+    .card-links{
+        text-decoration: none;
+        color: rgb(56, 149, 211);
+    }
+
+    .card-links:active{
+        color:red;
+    }
+
+
+    .card:hover{
+        transform: rotateY(180deg);
+    }
+
+
+    .card1{
+        background-image: url(CSS-Files/Trav-Images/Places.png);
+    }
+    
+    .card2{
+        background-image: url(CSS-Files/Trav-Images/Stays.png);
+    }
+
+    .card3{
+        background-image: url(CSS-Files/Trav-Images/Dine.png);
+    }
+
+    .card4{
+        background-image: url(CSS-Files/Trav-Images/Heritages.png);
+    }
+
+    .card5{
+        background-image: url(CSS-Files/Trav-Images/Watery-Lands.jpg);
+    }
+
+    .card6{
+        background-image: url(CSS-Files/Trav-Images/Shrines.png);
+    }
+
+    .card7{
+        background-image: url(CSS-Files/Trav-Images/Greeneries.png);
+    }
+
+    .card8{
+        background-image: url(CSS-Files/Trav-Images/Fun-Zones.jpg);
+    }
+
+    .card9{
+        background-image: url(CSS-Files/Trav-Images/Reserves.jpg);
+    }
+
+    .card10{
+        background-image: url(CSS-Files/Universal-Images/See-more.png);
+    }
+
+    .card11{
+        background-image: url(CSS-Files/Beauty-Images/Skin-Care.png);
+    }
+    
+    .card12{
+        background-image: url(CSS-Files/Beauty-Images/Body-Care.png);
+    }
+
+    .card13{
+        background-image: url(CSS-Files/Beauty-Images/Makeup.png);
+    }
+
+    .card14{
+        background-image: url(CSS-Files/Beauty-Images/Hair-Care.png);
+    }
+
+    .card15{
+        background-image: url(CSS-Files/Beauty-Images/Nail-Care.png);
+    }
+
+    .card16{
+        background-image: url(CSS-Files/Beauty-Images/Aromas.png);
+    }
+
+    .card17{
+        background-image: url(CSS-Files/Beauty-Images/Cosmetics.png);
+    }
+
+    .card18{
+        background-image: url(CSS-Files/Beauty-Images/Fashion.png);
+    }
+
+    .card19{
+        background-image: url(CSS-Files/Beauty-Images/Good-Food.png);
+    }
+
+    .card20{
+        background-image: url(CSS-Files/Lifestyle-Images/Living.png);
+    }
+    
+    .card21{
+        background-image: url(CSS-Files/Lifestyle-Images/Activities.png);
+    }
+
+    .card22{
+        background-image: url(CSS-Files/Lifestyle-Images/Career.png);
+    }
+
+    .card23{
+        background-image: url(CSS-Files/Lifestyle-Images/Techs.jpg);
+    }
+
+    .card24{
+        background-image: url(CSS-Files/Lifestyle-Images/Relationships.png);
+    }
+
+    .card25{
+        background-image: url(CSS-Files/Lifestyle-Images/Learnings.png);
+    }
+
+    .card26{
+        background-image: url(CSS-Files/Lifestyle-Images/Social-Cultures.png);
+    }
+
+    .card27{
+        background-image: url(CSS-Files/Lifestyle-Images/Entertainment.png);
+    }
+
+    .card28{
+        background-image: url(CSS-Files/Lifestyle-Images/Events-Celebrations.png);
+    }
+
+    .card29{
+        background-image: url(CSS-Files/Health-Images/Physical.png);
+    }
+
+    .card30{
+        background-image: url(CSS-Files/Health-Images/Mental.png);
+    }
+    
+    .card31{
+        background-image: url(CSS-Files/Health-Images/Fitness.png);
+    }
+
+    .card32{
+        background-image: url(CSS-Files/Health-Images/Preventions-Cures.png);
+    }
+
+    .card33{
+        background-image: url(CSS-Files/Health-Images/Sexual.png);
+    }
+
+    .card34{
+        background-image: url(CSS-Files/Health-Images/Balanced-Diets.jpeg);
+    }
+
+    .card35{
+        background-image: url(CSS-Files/Health-Images/Diseases.png);
+    }
+
+    .card36{
+        background-image: url(CSS-Files/Health-Images/Home-Remedies.png);
+    }
+
+    .card37{
+        background-image: url(CSS-Files/Health-Images/Medical-Researches.png);
+    }
+
+    .card38{
+        background-image: url(CSS-Files/Food-Images/Recipies.png);
+    }
+
+    .card39{
+        background-image: url(CSS-Files/Food-Images/Cuisines.jpg);
+    }
+    
+    .card40{
+        background-image: url(CSS-Files/Food-Images/Drinks-Beverages.png);
+    }
+
+    .card41{
+        background-image: url(CSS-Files/Food-Images/Groceries.png);
+    }
+
+    .card42{
+        background-image: url(CSS-Files/Food-Images/Animal-Feeds.png);
+    }
+
+    .card43{
+        background-image: url(CSS-Files/Food-Images/Farmings.png);
+    }
+
+    .card44{
+        background-image: url(CSS-Files/Food-Images/Confections.png);
+    }
+
+    .card45{
+        background-image: url(CSS-Files/Food-Images/Weird-Foods.png);
+    }
+
+    .card46{
+        background-image: url(CSS-Files/Food-Images/Bhogs-Falahaars.png);
+    }
+
+    .beauty-head{
+        display: flex;
+        position: absolute;
+        margin-top: 5.5%;
+        margin-left: 11%;
+        font-size: 28px;
+        color: yellow;
+        border-top: 2px solid yellow ;
+        border-left: 2px solid yellow ;
+        padding-left: 2px;
+        /* text-decoration: underline; */
+    }
+    
+    .hr-beauty{
+        display: flex;
+        position: absolute;
+        background-color: yellow;
+        border: none;
+        height: 1.5px;
+        width: 77vw;
+        margin-top: 5%;
+        margin-top: 7%;
+        margin-left: 19.5%;
+    }
+
+    
+
+
+
+
+
